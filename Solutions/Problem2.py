@@ -23,5 +23,5 @@ while c < roof:
     b = c + a
     c = a + b
         
-print sum
+print sum # 4613732
 
