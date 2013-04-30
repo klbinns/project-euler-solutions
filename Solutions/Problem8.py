@@ -27,17 +27,6 @@ Find the greatest product of five consecutive digits in the 1000-digit number.
 71636269561882670428252483600823257530420752963450
 
 '''
-'''
-myinteger = 212345
-number_string = str(myinteger)
-
-for ch in number_string:
-    print ch # will print each digit in order
-
-print number_string[:2] # first two digits
-print number_string[-3:] # last three digits
-print number_string[3] # forth digit
-'''
 
 s = ('73167176531330624919225119674426574742355349194934'
     '96983520312774506326239578318016984801869478851843'
