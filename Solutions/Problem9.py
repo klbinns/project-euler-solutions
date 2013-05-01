@@ -1,5 +1,4 @@
 #!/usr/bin/python
-from operator import mul
 '''
 Problem 9:
 
