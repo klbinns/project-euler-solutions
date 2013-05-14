@@ -25,17 +25,17 @@ divisors?
 
 '''
 t = 1
-a = 1
+i = 1
 count = 0
 
 while count <= 500:
     count = 0
-    a += 1
-    t += a
+    i += 1
+    t += i
     ttx = int(math.sqrt(t))
 
-    for i in range(1, ttx):
-        if t % i == 0:
+    for j in range(1, ttx):
+        if t % j == 0:
             count += 2
             
     if t == ttx**2:
