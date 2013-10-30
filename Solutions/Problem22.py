@@ -28,20 +28,15 @@ names = file.read().translate(None, '"').split(",")
 # sort names
 names.sort()
 
-# define alpha_value function
-def alpha_value(text):
-    v = 0
-    for char in text:
-        v += (ord(char) - 64)
-    return v
+# compute name score function
+def compute_name_score(name):
+    return sum([(ord(char)-64) for char in name])
 
-# calculate total
-total = 0
-for idx, val in enumerate(names):
-    
-    name_score = (idx+1) * alpha_value(val)
-    total += name_score
-    
-    
-print total # 871198282
+# compute score for each name
+name_scores = [compute_name_score(name) for name in names]
 
+# compute score for each index * name: index * name_score
+index_scores = [(idx+1)*val for idx, val in enumerate(name_scores)]
+
+# sum scores and print
+print sum(index_scores) # 871198282
