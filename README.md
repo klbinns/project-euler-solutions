@@ -3,7 +3,7 @@ project-euler-solutions
 
 My solutions to ProjectEuler.org computational math problems
 
-Most of my solutions will be written in Python.
+Most of my solutions will be written in Python 2.x.
 
 From ProjectEuler.org:
 
