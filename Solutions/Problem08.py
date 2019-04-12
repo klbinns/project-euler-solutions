@@ -1,5 +1,5 @@
-#!/usr/bin/python
 from operator import mul
+from functools import reduce
 '''
 Problem 8:
 
@@ -60,4 +60,4 @@ for startIndex in range(len(x)):
     if candidate > winner:
         winner = candidate
 
-print winner # 40824
+print(winner) # 40824

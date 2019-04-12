@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import sys
 '''
 Problem 5:
@@ -22,7 +21,7 @@ while True:
                             if i % 13 == 0:
                                 if i % 12 == 0:
                                     if i % 11 == 0:
-                                        print i #232792560
+                                        print(i) #232792560
                                         break
     i += 20
 

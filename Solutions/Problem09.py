@@ -1,4 +1,4 @@
-#!/usr/bin/python
+from math import floor
 '''
 Problem 9:
 
@@ -16,10 +16,10 @@ Find the product abc.
 s = 1000
 a = 3
 
-for a in range(3, (s-3)/3):
-    for b in range(a+1, (s-1-a)/2):
+for a in range(3, floor((s-3)/3)):
+    for b in range(a+1, floor((s-1-a)/2)):
         c = s-a-b
         if c*c == a*a + b*b:
-            print a, b, c
-            print 'Product: ' + str(a*b*c) # 31875000
+            print(a, b, c)
+            print ('Product: ' + str(a*b*c)) # 31875000
             

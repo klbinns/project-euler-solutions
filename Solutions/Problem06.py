@@ -1,4 +1,3 @@
-#!/usr/bin/python
 '''
 Problem 6:
 
@@ -21,4 +20,4 @@ sum_eq = (limit * (limit + 1)) / 2
 
 sum_sq_eq = ((2 * limit + 1) * (limit + 1) * limit) / 6
 
-print sum_eq**2 - sum_sq_eq #25164150
+print(sum_eq**2 - sum_sq_eq) #25164150

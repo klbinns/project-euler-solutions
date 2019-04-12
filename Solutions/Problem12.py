@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import math
 '''
 Problem 12:
@@ -41,4 +40,4 @@ while count <= 500:
     if t == ttx**2:
         count -= 1
 
-print t # 76576500
+print(t) # 76576500

@@ -1,5 +1,6 @@
-#!/usr/bin/python
-import StringIO, operator
+from io import StringIO
+from operator import mul
+from functools import reduce
 '''
 Problem 11:
 
@@ -57,7 +58,7 @@ s = ('08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08\n'
     )
 
 grid = []
-buf = StringIO.StringIO(s)
+buf = StringIO(s)
 
 # read input data into lists
 for i in range(1, 21):
@@ -69,7 +70,7 @@ def horizontal_greatest(grid):
     g = 0
     for row in grid:
         for j in range(0, len(row)-4):
-            candidate = reduce(operator.mul, row[j:j+5])
+            candidate = reduce(mul, row[j:j+5])
             if candidate > g:
                 g = candidate
     return g
@@ -90,7 +91,4 @@ greatest_candidates = []
 greatest_candidates.append(horizontal_greatest(grid))
 greatest_candidates.append(vertical_greatest(grid))
 
-
-print max(greatest_candidates)
-
-
+print(max(greatest_candidates))

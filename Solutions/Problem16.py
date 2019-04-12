@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 '''
 Problem 16
 
@@ -18,4 +16,4 @@ def sum_digits(n):
         n /= 10
     return s
 
-print sum_digits(a) # 1366
+print(sum_digits(a)) # 1366

@@ -14,8 +14,8 @@ What is the millionth lexicographic permutation of the digits
 
 '''
 def nth(iterable, n, default=None):
-        "Returns the nth item or a default value"
-        return next(islice(iterable, n, None), default)
+  "Returns the nth item or a default value"
+  return next(islice(iterable, n, None), default)
         
 # nth function is zero indexed, hence 999999 - millionth element
 answer = nth(permutations(range(10)), 999999)

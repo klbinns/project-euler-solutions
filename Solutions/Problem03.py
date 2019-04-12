@@ -1,4 +1,3 @@
-#!/usr/bin/python
 '''
 Problem 3:
 
@@ -20,5 +19,4 @@ while n > 1:
         
     factor = factor + 1
     
-print lastFactor # 6857
-
+print(lastFactor) # 6857

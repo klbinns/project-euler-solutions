@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import math
 '''
 Problem 7:
@@ -8,7 +7,6 @@ that the 6th prime is 13.
 
 What is the 10001st prime number?
 '''
-
 
 def isPrime(n):
     if n == 1:
@@ -50,4 +48,4 @@ while not count == limit:
         count += 1
 
 
-print answer # 104743
+print(answer) # 104743

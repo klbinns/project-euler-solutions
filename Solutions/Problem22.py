@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import os
 
 '''
@@ -23,7 +22,7 @@ rel_path = 'data/names.txt'
 abs_file_path = os.path.join(script_dir, rel_path)
 
 file = open(abs_file_path, 'r')
-names = file.read().translate(None, '"').split(",")
+names = file.read().translate({ord(i): None for i in '"'}).split(",")
 
 # sort names
 names.sort()
@@ -39,4 +38,4 @@ name_scores = [compute_name_score(name) for name in names]
 index_scores = [(idx+1)*val for idx, val in enumerate(name_scores)]
 
 # sum scores and print
-print sum(index_scores) # 871198282
+print(sum(index_scores)) # 871198282

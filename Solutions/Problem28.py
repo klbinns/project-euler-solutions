@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import math
 '''
 Problem 28:
@@ -45,8 +44,7 @@ while idx < stop:
         
     space += 2 # the dist between diagonals increase by 2 after each iteration
 
-
-print sum # 669171001
+print(sum) # 669171001
 
 
 

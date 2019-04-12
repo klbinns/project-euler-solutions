@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import os
 from math import sqrt
 
@@ -26,7 +25,7 @@ rel_path = 'data/words.txt'
 abs_file_path = os.path.join(script_dir, rel_path)
 
 file = open(abs_file_path, 'r')
-words = file.read().translate(None, '"').split(",")
+words = file.read().translate({ord(i): None for i in '"'}).split(",")
 
 
 # compute word score function
@@ -45,4 +44,4 @@ word_scores = [compute_word_score(word) for word in words]
 tri_numbers = [score for score in word_scores if is_triangle_number(score)]
 
 # print length of tri_numbers list
-print len(tri_numbers) # 162
+print(len(tri_numbers)) # 162

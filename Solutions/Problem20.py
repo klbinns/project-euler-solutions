@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import math
 
 '''
@@ -17,4 +16,4 @@ def sum_digits(n):
         n /= 10
     return s
 
-print sum_digits(fact_100) # 648
+print(sum_digits(fact_100)) # 648

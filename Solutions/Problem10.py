@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import math
 '''
 Problem 10:
@@ -48,5 +47,5 @@ for n in range(3, limit, 2):
         answer += n
             
             
-print answer # 142913828922
+print(answer) # 142913828922
 # brute force solution, kinda slow

@@ -1,4 +1,3 @@
-#!/usr/bin/python
 '''
 Problem 2:
 
@@ -23,5 +22,5 @@ while c < roof:
     b = c + a
     c = a + b
         
-print sum # 4613732
+print(sum) # 4613732
 

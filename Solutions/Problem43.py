@@ -1,4 +1,3 @@
-#!/usr/bin/python
 from itertools import permutations
 
 '''
@@ -47,7 +46,7 @@ for r in combos:
         t = int(''.join(map(str, r)))
         sum += t
     
-print sum # 16695334890
+print(sum) # 16695334890
 
 # a bit slow using Python in serial fashion.
 # I wonder if we can use parallel processing to speed things up?
