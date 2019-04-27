@@ -11,10 +11,9 @@ c = 0
 index = 2
 
 while len(str(c)) < 1000:
-
-    c = a + b
-    index += 1 
-    a = b
-    b = c
+  c = a + b
+  index += 1 
+  a = b
+  b = c
  
 print(index) #4782

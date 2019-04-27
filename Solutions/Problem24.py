@@ -20,4 +20,4 @@ def nth(iterable, n, default=None):
 # nth function is zero indexed, hence 999999 - millionth element
 answer = nth(permutations(range(10)), 999999)
 
-print ''.join(map(str, answer)) # 2783915460
+print(''.join(map(str, answer))) # 2783915460
